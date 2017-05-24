@@ -1,6 +1,8 @@
 TEXFILE=Basiswissen_E-Mail
 CDOBJ=cd obj
 
+.PHONY: all
+
 all: build ready
 
 build:
