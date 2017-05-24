@@ -17,6 +17,6 @@ ready:
 	mv obj/${TEXFILE}.pdf ./
 
 prepare:
-	mkdir -p ../obj;
-	mkdir -p ../src;
-	mkdir -p ../images;
+	mkdir -p ./obj;
+	mkdir -p ./src;
+	mkdir -p ./images;
