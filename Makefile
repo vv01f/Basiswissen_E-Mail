@@ -3,7 +3,7 @@ CDOBJ=cd obj
 
 .PHONY: all
 
-all: build ready
+all: prepare build ready
 
 build:
 	${CDOBJ} && \
