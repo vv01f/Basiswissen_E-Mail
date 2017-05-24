@@ -14,7 +14,7 @@ build:
 		pdflatex ../src/${TEXFILE}.tex
 
 ready:
-	mv obj/${TEXFILE}.pdf ./
+	mv obj/${TEXFILE}.pdf ./$$(date +"%Y%m%dT%H%M%S")"-"${TEXFILE}".pdf"
 
 prepare:
 	mkdir -p ./obj;
