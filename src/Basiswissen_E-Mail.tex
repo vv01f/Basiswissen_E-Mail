@@ -1,14 +1,20 @@
-\documentclass[utf8,10pt,a4paper,oneside]{beamer}
+\documentclass[utf8,10pt,%
+aspectratio=% none or one of these is enough
+%1610% 16:10
+%169% 16:9
+%149% 14:9
+%141% 1.41:1
+%54% 5:4
+43% default 4:3 – tested
+%32% 3:2
+]{beamer}
 \usepackage[ngerman]{babel}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
-\usepackage{hyperref}
 \usepackage{listings}
 \usepackage{enumitem}
-\author{Sabine Loch\and Matthias Jakobi}
-\title{Basiswissen E-Mail\\ \small Thunderbird, SquirrelMail und E-Mail-Verteiler}
 \usepackage{tikz}
 \usepackage{environ}
 \usepackage{sidecap}
@@ -16,6 +22,12 @@
 \usepackage{subfigure}
 \usepackage{csquotes}
 %\usepackage{mbox}
+\usepackage{hyperref}
+
+\author{Sabine Loch\and Matthias Jakobi}
+\title{Basiswissen E-Mail\\ \small Thunderbird, SquirrelMail und E-Mail-Verteiler}
+%\titlegraphic{\pgfuseimage{titlegraphic}}
+\institute[StuRa]{StuRa HTW Dresden}
 
 \makeatletter
 \newsavebox{\measure@tikzpicture}
