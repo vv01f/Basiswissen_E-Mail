@@ -7,10 +7,8 @@ all: prepare build ready
 
 build:
 	${CDOBJ} && \
-		pdflatex ../src/${TEXFILE}.tex
-	${CDOBJ} && \
-		pdflatex ../src/${TEXFILE}.tex
-	${CDOBJ} && \
+		pdflatex ../src/${TEXFILE}.tex && \
+		pdflatex ../src/${TEXFILE}.tex && \
 		pdflatex ../src/${TEXFILE}.tex
 
 ready:
